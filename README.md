@@ -1,3 +1,3 @@
 ## Installation
 
-`typings install github:meteor-typings/simple-schema --global`
+`typings install github:pjanu/simple-schema --global`

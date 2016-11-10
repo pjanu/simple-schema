@@ -46,7 +46,7 @@ interface SimpleSchema_Static {
   new(definition: SimpleSchemaDefinition): SimpleSchema_Instance;
   extendOptions(options: { [option: string]: any }): void;
   addValidator(validator: Function): void;
-  messages(messageKeysAndTexts: { [errorKey: string]: string; /** Text for that error **/ } | { exp: RegExp; msg: string; }[]);
+  messages(messageKeysAndTexts: { [errorKey: string]: string; /** Text for that error **/ } | { exp: RegExp; msg: string; }[] | { regEx: { exp?: RegExp; msg: string; }[]);
   debug(isDebugging: boolean): void;
   RegEx: { Email: RegExp, Url: RegExp, Domain: RegExp, IP: RegExp };
 }
